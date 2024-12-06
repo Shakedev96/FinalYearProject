@@ -14,19 +14,22 @@ public class DropSpikes : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        Debug.Log("PLayer entered");
         if(other.gameObject.CompareTag("Player"))
         {
             InvokeRepeating("SpikeSpawner",0.5f,1f);
         }
+        SpikeSpawner();
     }
 
     void OnTriggerExit(Collider other)
-{
-    if (other.gameObject.CompareTag("Player"))
     {
-        CancelInvoke("SpikeSpawner");
+        Debug.Log("Player left");
+        if (other.gameObject.CompareTag("Player"))
+        {
+            CancelInvoke("SpikeSpawner");
+        }
     }
-}
 
 
     void SpikeSpawner()

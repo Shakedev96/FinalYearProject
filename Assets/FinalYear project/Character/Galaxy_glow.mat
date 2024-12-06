@@ -49,8 +49,8 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
-    - _Galaxy_Color: {r: 18.113209, g: 8.323655, b: 0, a: 0}
-    - _Shade_color: {r: 1, g: 0.4764151, b: 0.4764151, a: 0}
+    - _Galaxy_Color: {r: 1, g: 1, b: 1, a: 0}
+    - _Shade_color: {r: 1, g: 1, b: 1, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &4446244163623384809
 MonoBehaviour:

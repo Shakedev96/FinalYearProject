@@ -23,7 +23,12 @@ public class Spike : MonoBehaviour
         if(other.gameObject.CompareTag("Player"))
         {
             Destroy(other.gameObject);
-            other.gameObject.transform.position = reSpawnPt.position;
+            //other.gameObject.transform.position = reSpawnPt.position;
+        }
+
+        if(other.gameObject.layer == LayerMask.NameToLayer("Ground"))
+        {
+            Destroy(this.gameObject);
         }
     }
 }

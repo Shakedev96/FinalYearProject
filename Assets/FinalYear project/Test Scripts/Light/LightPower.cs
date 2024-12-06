@@ -32,7 +32,7 @@ public class LightPower : MonoBehaviour
             currentIntensity = Mathf.Clamp(currentIntensity, minIntensity, maxIntensity);
             playerLight.intensity = currentIntensity;
         }
-        else if (Input.GetKeyDown(lightDownKey))
+        else if (Input.GetKey(lightDownKey))
         {
             currentIntensity -= intensityDecreaseRate * Time.deltaTime;
             currentIntensity = Mathf.Clamp(currentIntensity, minIntensity, maxIntensity);

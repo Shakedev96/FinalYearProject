@@ -30,10 +30,10 @@ public class Movement : MonoBehaviour
 
     void PlayerMove()
     {
-        horizontalInput = Input.GetAxis("Vertical");
-        verticalInput = Input.GetAxis("Horizontal");
+        horizontalInput = Input.GetAxis("Horizontal");
+        verticalInput = Input.GetAxis("Vertical");
         // change The axis in vertical and horizontal input to get the desired Vector3.forward ==> forward move with A & D
-        Vector3 _inputkey = new Vector3(horizontalInput , 0 ,verticalInput );
+        Vector3 _inputkey = new Vector3(horizontalInput, 0 , verticalInput);
 
         //playerRB.velocity = _inputkey * walkSpeed;
 
